@@ -1,0 +1,240 @@
+@media only screen and (max-width: 990px) {
+  /* Creatign a hamburger menu */
+  .toggle-menu i {
+    display: initial;
+    padding-right: 20px;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  .toggle-menu:hover {
+    color: var(--accent-color);
+  }
+  .nav-links {
+    display: none;
+  }
+  /* Cards */
+  .example-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .exaple-card {
+    gap: 20px;
+    width: calc(50% - 15px);
+    height: 200px;
+  }
+  /* Try Section */
+  .try-container {
+    gap: 30px;
+    justify-content: center;
+  }
+  .left-try {
+    width: calc(50vw - 15px);
+  }
+  .right-try {
+    width: calc(50vw - 15px);
+  }
+  .right-try img{
+    width: 100%;
+  }
+  .right-try::before {
+    top: 120px;
+    left: 125px;
+    width: 235px;
+}
+.right-try p {
+    top: 175px;
+    bottom: 0;
+    right: 0px;
+    left: 195px;
+}
+}
+@media only screen and (max-width: 780px) {
+  /* Resets  */
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  /* .primary-button{
+    border-radius: 6px;
+    font-weight: 600;
+    padding: 11px 15px;
+    width: 95vw;
+    text-align: center;
+  } */
+  /* .secondary-button{
+    border-radius: 6px;
+    font-weight: 600;
+    padding: 11px 15px;
+    
+  } */
+
+  /* header */
+  .header {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .header-left {
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .header-left .primary-button {
+    width: 90%;
+  }
+  .header-right {
+    width: 100vw;
+  }
+  .img-container {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-container img {
+    width: 80%;
+  }
+
+  /* Company Logos */
+  .logos {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  /* Features Section */
+  .card img {
+    width: 40px;
+  }
+  .features-container {
+    background-size: 650px;
+  }
+
+  .card {
+    text-align: center;
+    gap: 10px;
+    flex-direction: column;
+    width: 30%;
+  }
+  .card .secondary-button {
+    border-radius: 6px;
+    font-weight: 400;
+    padding: 7px 20px;
+    font-size: 1rem;
+  }
+  /* Big Feature Section */
+  .bf-container {
+    flex-direction: column;
+  }
+  /* Example Section */
+  .example-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .example-cards {
+    gap: 15px;
+  }
+  /* Try section */
+
+  .try-container {
+    gap: 30px;
+    flex-direction: column-reverse;
+  }
+  .left-try {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .button-try {
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-try .primary-button,
+  .button-try .secondary-button {
+    width: 90%;
+    text-align: center;
+  }
+.right-try p {
+    top: 150px;
+    bottom: 0;
+    right: 0px;
+    left: 150px;
+}
+.left-try {
+    width: 100vw;
+  }
+  .right-try {
+    width: 100vw;
+  }
+  .right-try::before {
+    top: 200px;
+    left: 200px;
+    width: 52%;
+}
+.right-try p {
+    top: 300px;
+    bottom: 0;
+    right: 0px;
+    left: 340px;
+    font-size: 1.4rem;
+}
+/* Cta section  */
+.cta-section {
+    margin-top: 20px;
+}
+.cta-container{
+    flex-direction: column;
+    gap: 15px;
+}
+/* Footer section  */
+.footer-logo {
+    margin-bottom: 0px;
+}
+.footer-container{
+    flex-direction: column;
+}
+.big-list {
+    grid-template-columns: none;
+    grid-template-rows: repeat(1, 45% 31% 30%);
+    /* gap: 0px; */
+}
+.products,
+.card-sorting,
+.resources{
+flex-direction: column;
+gap: 10px;
+align-items: center;
+
+}
+.policy{
+
+    display: flex;
+
+    
+}
+ul li a {
+    font-size: 0.8rem;
+}
+.sub-footer-container ul li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+.sub-footer-container ul li a {
+    font-size: 0.8rem;
+}
+.socials li a i{
+    font-size: 1.5rem;
+
+}
+
+}

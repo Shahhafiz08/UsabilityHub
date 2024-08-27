@@ -378,11 +378,14 @@ gap: 30px;
 }
 .right-try p{
     position: absolute;
-    top: 43%;
-    left: 43%;
+    top: 46%;
+    left: 44%;
     font-size: 1.3em;
     z-index: 3;
     color:var(--primary-text-color);
+}
+.try-secondry-button{
+    font-size: 1.1em;
 }
 /* Cta Section */
 

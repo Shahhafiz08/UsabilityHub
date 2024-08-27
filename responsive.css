@@ -248,7 +248,7 @@
     position: relative;
   }
 
-  /*  */
+  
 
   .right-try p {
     position: absolute;
@@ -257,7 +257,7 @@
     right: 0px;
     left: 250px;
   }
-  /*  */
+
   .left-try {
     flex-direction: column;
     gap: 20px;
@@ -313,7 +313,7 @@
   }
   .footer-container {
     flex-direction: column;
-    padding: 0px;
+    margin-top: 30px;
   }
   .big-list {
     grid-template-columns: none;

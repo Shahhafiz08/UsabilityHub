@@ -11,29 +11,32 @@
 @media only screen and (max-width: 990px) {
   /* Creatign a hamburger menu */
   .nav-links {
-   
     transform: translateX(-50%);
     opacity: 0;
     visibility: hidden;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  
   }
   
   #hamburger:checked ~ .nav-links {
     transform: translateX(0%);
     opacity: 1;
     visibility: visible;
+    border-bottom: 1px solid var(--primary-text-color);
+    border-left: 1px solid var(--primary-text-color);
+
    
   }
   #hamburger:checked ~ .burger > #toggle_upper{
   
-    transform: translate(5px, 6px)rotate(320deg);
+    transform: translate(5px, 6px)rotate(310deg);
   }
   #hamburger:checked ~ .burger > #toggle_middle{
     display: none;
   }
   #hamburger:checked ~ .burger > #toggle_bottom{
 
-    transform: translate(5px, -4px) rotate(-320deg);
+    transform: translate(5px, -4px) rotate(-310deg);
   }
 
 
@@ -64,10 +67,6 @@
   .burger{
     flex-direction: column;
   }
-
-
-
-
 
   .nav-links ul{
     flex-direction: column;

@@ -16,14 +16,14 @@
   }
   #hamburger:checked ~ .burger > #toggle_upper{
   
-    transform: translate(5px, 6px)rotate(45deg);
+    transform: translate(5px, 6px)rotate(320deg);
   }
   #hamburger:checked ~ .burger > #toggle_middle{
     display: none;
   }
   #hamburger:checked ~ .burger > #toggle_bottom{
 
-    transform: translate(5px, -4px) rotate(-45deg);
+    transform: translate(5px, -4px) rotate(-320deg);
   }
 
 

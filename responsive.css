@@ -1,11 +1,11 @@
 @media only screen and (max-width: 1400px) {
   .container{
-    width: 1300px;
+    max-width: 1300px;
   }
 }
 @media only screen and (max-width: 1600px) {
   .container{
-    width: 1600px;
+    max-width: 1350px;
   }
 }
 @media only screen and (max-width: 990px) {

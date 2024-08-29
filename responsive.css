@@ -10,29 +10,28 @@
 }
 @media only screen and (max-width: 990px) {
   /* Creatign a hamburger menu */
-
   .nav-links {
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
-    top: 75%; 
-    background-color: rgba(255, 255, 255, 0.504);
+    top: 75%;
+    background-color: rgba(255, 255, 255, 0.149);
     padding: 20px;
-    width: 60vw;
+    width: 68vw;
     height: 100vh;
     right: -60%;
     backdrop-filter:blur(10px);
-    opacity: 0;
-    visibility: hidden;
     transition: all 0.3s ease-in-out;
-  }
   
+  }
   #hamburger:checked ~ .nav-links {
-    transform: translateX(-90%);
+    transform: translateX(-85%);
     opacity: 1;
     visibility: visible;
-  transition: all 0.3s ease-in-out;
 
-   
   }
+  
   #hamburger:checked ~ .burger > #toggle_upper{
   
     transform: translate(5px, 6px)rotate(310deg);
@@ -77,20 +76,13 @@
   .nav-links ul{
     flex-direction: column;
   }
+
+  
   .nav-menu{
     position: relative;
     overflow: initial;
   }
-  .nav-links {
-    position: absolute;
-    top: 75%;
-    background-color: rgba(255, 255, 255, 0.149);
-    padding: 20px;
-    width: 68vw;
-    right: 0%;
-    backdrop-filter:blur(10px);
-    
-}
+  
 .signin{
   width: 25vw;
   text-align: center;
@@ -165,6 +157,11 @@
     font-size: .9em;
   }
 
+
+
+
+
+}
 @media only screen and (max-width: 780px) {
   /* Resets  */
 

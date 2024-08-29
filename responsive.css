@@ -10,20 +10,26 @@
 }
 @media only screen and (max-width: 990px) {
   /* Creatign a hamburger menu */
+
   .nav-links {
-    transform: translateX(-50%);
+    position: absolute;
+    top: 75%; 
+    background-color: rgba(255, 255, 255, 0.504);
+    padding: 20px;
+    width: 60vw;
+    height: 100vh;
+    right: -60%;
+    backdrop-filter:blur(10px);
     opacity: 0;
     visibility: hidden;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  
+    transition: all 0.3s ease-in-out;
   }
   
   #hamburger:checked ~ .nav-links {
-    transform: translateX(0%);
+    transform: translateX(-90%);
     opacity: 1;
     visibility: visible;
-    border-bottom: 1px solid var(--primary-text-color);
-    border-left: 1px solid var(--primary-text-color);
+  transition: all 0.3s ease-in-out;
 
    
   }
@@ -75,14 +81,8 @@
     position: relative;
     overflow: initial;
   }
-  .nav-links {
-    position: absolute;
-    top: 75%;
-    background-color: rgba(255, 255, 255, 0.149);
-    padding: 20px;
-    width: 68vw;
-    right: 0%;
-    backdrop-filter:blur(10px);
+  
+    
     
 }
 .signin{
@@ -159,11 +159,6 @@
     font-size: .9em;
   }
 
-
-
-
-
-}
 @media only screen and (max-width: 780px) {
   /* Resets  */
 

@@ -302,9 +302,8 @@ var tlsubfooter=gsap.timeline({
     scrollTrigger:{
         trigger:".footer-container",
         scroller:"body",
-       
-        start:"bottom 90%",
-        end:"bottom 90%",
+        start:"top 70%",
+        end:"top 50%",
         scrub:3
 
     }

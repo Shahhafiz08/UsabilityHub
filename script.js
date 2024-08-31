@@ -45,7 +45,7 @@ var tl2= gsap.timeline({
     scrollTrigger:{
         trigger:".companies-section",
         scroller:"body",
-         markers:true,
+      
         start:"top 50%",
         end:"top 0%",
         scrub:3

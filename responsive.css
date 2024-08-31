@@ -23,6 +23,7 @@
     right: -60%;
     backdrop-filter:blur(10px);
     transition: all 0.3s ease-in-out;
+    z-index: 111;
   
   }
   #hamburger:checked ~ .nav-links {

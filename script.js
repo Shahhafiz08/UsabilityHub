@@ -46,8 +46,8 @@ var tl2= gsap.timeline({
         trigger:".companies-section",
         scroller:"body",
       
-        start:"top 50%",
-        end:"top 0%",
+        start:"top 80%",
+        end:"top 40%",
         scrub:3
     }
 })

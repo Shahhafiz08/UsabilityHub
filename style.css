@@ -13,11 +13,18 @@
   --white-color: #ffffff;
   --padding-inline-section: 20px;
 }
-body {
-  font-family: "Poppins", sans-serif;
-  color: var(--primary-text-color);
-  overflow-x: hidden;
+
+html {
+    overflow-x: hidden;
 }
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+       width: 100%;
+
+}
+
 h1 {
   font-size: 3rem;
 }
@@ -52,7 +59,6 @@ ul{
   max-width: 1180px;
   margin-inline: auto;
   padding: var(--padding-inline-section);
-  overflow: hidden;
 
 }
 .flex{
@@ -112,6 +118,7 @@ border: 0.5px solid  var(--accent-color);
     margin-top: 10px;
     margin-bottom: 10px;
   align-items: center;
+
 
 }
 .company-logo img{
@@ -316,6 +323,7 @@ gap: 30px;
     background-color: var(--primary-text-color);
 
     margin-top: 30px; 
+    overflow-x: hidden;
 }
 
 .try-container{

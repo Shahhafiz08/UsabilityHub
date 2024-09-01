@@ -9,27 +9,33 @@
   }
 }
 @media only screen and (max-width: 990px) {
+  .nav-menu {
+    position: relative;
+    width: 100%;
+  }
   /* Creatign a hamburger menu */
   .nav-links {
-    transform: translateX(-50%);
+    transform: translateX(160%); 
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    top: 75%;
+    top: 63%;
     background-color: rgba(255, 255, 255, 0.149);
     padding: 20px;
-    width: 68vw;
+    width: 60vw;
     height: 100vh;
-    right: -60%;
     backdrop-filter:blur(10px);
     transition: all 0.3s ease-in-out;
-    z-index: 111;
+    z-index: 101;
   
   }
   #hamburger:checked ~ .nav-links {
-    transform: translateX(-85%);
+    transform: translateX(60%);
     opacity: 1;
     visibility: visible;
+    z-index: 100;
+    
+ 
 
   }
   
@@ -49,6 +55,7 @@
   .burger{
     font-size: 1.5rem;
     user-select: none;
+    position: relative;
     
   }
 
@@ -76,12 +83,6 @@
 
   .nav-links ul{
     flex-direction: column;
-  }
-
-  
-  .nav-menu{
-    position: relative;
-    overflow: initial;
   }
   
 .signin{

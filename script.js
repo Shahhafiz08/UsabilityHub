@@ -1,11 +1,52 @@
 
+function homePageAnimation(){
+    // Banner Text
+
+gsap.from(".top-banner ",{
+    y:-60,
+    opacity:0,
+    duriation:0.3,
+    delay:.3,
+})
+// Nav-bar animation
+gsap.registerPlugin()
+
+var tl = gsap.timeline();
+tl.from(".nav-menu .company-logo , .nav-menu .nav-links ul li , .nav-menu .company-logo ,.burger",{
+    y:-60,
+    opacity:0,
+    duration:0.3,
+    delay:.4,
+    stagger:0.2
+})
+tl.from(".header-left h1 , .header-left p",{
+    opacity:0,
+    x:-100,
+    duration:0.3,
+})
+
+tl.from(" .header-left .primary-button",{
+    opacity:0,
+    duration:0.3,
+})
+
+
+tl.from(".header-right .img-container ",{
+    opacity:0,
+    x:100,
+    duration:0.3,
+   
+},"-=0.2.5")
+
+}
+homePageAnimation();
 
 // Companies Section
 var tl2= gsap.timeline({
     scrollTrigger:{
         trigger:".companies-section",
         scroller:"body",
-         markers:true,
+      
         start:"top 50%",
         end:"top 0%",
         scrub:3
@@ -279,46 +320,3 @@ tlsubfooter.from(".socials li",{
     y:50,
     stagger:.3
 })
-function homePageAnimation(){
-    // Banner Text
-
-gsap.from(".top-banner ",{
-    y:-60,
-    opacity:0,
-    duriation:0.3,
-    delay:.3,
-})
-// Nav-bar animation
-gsap.registerPlugin()
-
-var tl = gsap.timeline();
-tl.from(".nav-menu .company-logo , .nav-menu .nav-links ul li , .nav-menu .company-logo ,.burger",{
-    y:-60,
-    opacity:0,
-    duration:0.3,
-    delay:.4,
-    stagger:0.2
-})
-tl.from(".header-left h1 , .header-left p",{
-    opacity:0,
-    x:-100,
-    duration:0.3,
-})
-
-tl.from(" .header-left .primary-button",{
-    opacity:0,
-    duration:0.3,
-})
-
-
-tl.from(".header-right .img-container ",{
-    opacity:0,
-    x:100,
-    duration:0.3,
-   
-},"-=0.2.5")
-
-}
-homePageAnimation();
-
-
